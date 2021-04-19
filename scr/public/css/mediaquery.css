@@ -1,0 +1,180 @@
+@media screen and (max-width: 870px){
+    /*********************************************** Menu **********************************************/
+    .section-menu .menu-cont{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*********************************************** Section **********************************************/
+
+    .section{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section .texto{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    /*********************************************** Menu navegacion**********************************************/
+    .header .nav .menu{
+        display: block;
+        position: absolute;
+        left: 90%;
+        z-index:30;
+    }
+
+    .header .nav .links{
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        position: fixed;    
+        top:0;
+        left:1000px;
+        background: #f2f2f2;
+        transition: left 1s ease;
+        text-align: center;
+    }
+    
+    .showLinks{
+        position: fixed;
+        left: 0% !important;
+    }
+    
+    /*********************************************** Texto imagen *****************************************************/
+    
+    .texto_img{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .texto_img div{
+        padding: 3%;
+        text-align: left;
+    }
+
+
+    .texto_img img{
+        width: 300px;
+        margin-bottom: 30vh;
+    } 
+    /**************************************************** services **********************************************/
+    .card-cont{
+        grid-template-columns: repeat(2,40%);
+    }
+
+    /*********************************************** section *****************************************************/
+    .section > img {
+        width: 80%;
+    }
+
+
+}
+
+@media screen and (max-width: 600px){
+
+    .titulo{
+        font-size: 50px;
+    }
+
+    /*********************************************** Texto imagen *****************************************************/
+
+    .texto_img img{
+        width: 300px;
+        margin-bottom: 30vh;
+    } 
+
+    /**************************************************** services **********************************************/
+    .card-cont{
+        grid-template-columns: 50%;
+    }
+
+    .card-cont .card{
+        width: 90%;
+    }
+
+
+
+    /*********************************************** Menu **********************************************/
+    .section-menu .menu-cont{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .section-menu .menu-cont .menu{
+        width: 90%;
+    }
+    /*********************************** imagen hidden *********************************/
+    .show-menu button{  
+        margin-left: 75%;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .titulo{
+        font-size: 40px;
+    }
+
+    /*********************************************** Texto imagen *****************************************************/
+    .texto_img img{
+        width: 250px;
+    }
+    .section-menu{
+        width: 100%;
+    }
+
+    /**************************************************** services **********************************************/
+    .card-cont{
+        grid-template-columns: 70%;
+    }
+
+    .card-cont .card{
+        width: 100%;
+    }
+    
+    /*********************************** imagen hidden *********************************/
+    .show-menu button{
+        margin-left: 80%;
+    }
+    /*********************************** imagen hidden *********************************/
+    .show-menu > img{
+        width: 230px;
+    }
+    .titulo_hidden{
+        font-size: 27px;
+    }
+    
+}
+
+
+@media screen and (max-width: 300px){
+    .titulo{
+        font-size: 35px;
+    }
+    .parrafo{
+        font-size: 15px;
+    }
+
+    /*********************************************** Texto imagen *****************************************************/
+
+    .texto_img img{
+        width: 200px;
+    }
+
+    /*********************************** imagen hidden *********************************/
+    .show-menu button{
+        margin-left: 60%;
+    }
+
+    .show-menu > img{
+        width: 200px;
+    }
+
+
+
+}
+
